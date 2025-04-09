@@ -11,6 +11,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/buttonclicker" />
+            <option value="$PROJECT_DIR$/control_lesson1" />
             <option value="$PROJECT_DIR$/layouttype" />
           </set>
         </option>
