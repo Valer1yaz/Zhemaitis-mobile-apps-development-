@@ -31,14 +31,31 @@
 
 ![image](https://github.com/user-attachments/assets/faa8956c-8902-473f-b4ee-efbdea3e2e41)
 
-
 ** Модуль IntentFilter **
+
+В разметку добавлены «activity_main.xml» кнопка и обработчик нажатия для вызова веб-браузера
+
+![image](https://github.com/user-attachments/assets/5a80eb99-db48-4ae7-9295-da3ce265cf25)
+
+При нажатии на первую кнопку открывается браузер на указанной странице
+
+![image](https://github.com/user-attachments/assets/bb6b96cd-2e27-4f18-9d35-eed7296cde2f)
+
+При нажатии на кнопку "Мои ФИО" открывается окно для отправки указанных данных в другие приложения
+
+![image](https://github.com/user-attachments/assets/f649d47a-7d69-465e-874f-bdd2fefe559b)
 
 ** Модуль ToastApp **
 
+
+
 ** Модуль NotificationApp **
 
+
+
 ** Модуль Dialog **
+
+
 
 ** Итоги **
 
