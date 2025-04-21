@@ -73,7 +73,7 @@
 В первой кнопке по инструкции из практики сделан диалог "Дороги к успеху"
 
 ![image](https://github.com/user-attachments/assets/96cf5aee-a365-46ad-bf9b-2d10cc34f678)
- [image](https://github.com/user-attachments/assets/310d97a8-8977-43d3-958f-3df6c82762bb) ![image](https://github.com/user-attachments/assets/34ecd7bb-cb61-4b78-9723-289f9167ce37)
+![image](https://github.com/user-attachments/assets/310d97a8-8977-43d3-958f-3df6c82762bb) ![image](https://github.com/user-attachments/assets/34ecd7bb-cb61-4b78-9723-289f9167ce37)
 
 По второй кнопке вызывается диалог выбора времени с помощью TimePickerDialog
 
