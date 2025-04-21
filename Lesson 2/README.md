@@ -47,18 +47,45 @@
 
 ** Модуль ToastApp **
 
-Обработчик для подсчёта количества введенных символов с выводом в уведомлении
+Обработчик для подсчёта количества введенных символов с выводом во всплывающей подсказке
 
 ![image](https://github.com/user-attachments/assets/47506177-6cd0-488f-93b7-f08b8c7f267d) ![image](https://github.com/user-attachments/assets/a5db58b9-3cce-4eac-94b8-7bcf38d13658)
 
 
 ** Модуль NotificationApp **
 
+Обработчик для отправки\получения уведомления в шторке
+
+![image](https://github.com/user-attachments/assets/11fbf9ee-30d8-476e-bfdc-db412b0c599f)
+
+![image](https://github.com/user-attachments/assets/9ac77362-c297-4cf7-a5b6-8d2425d595b0)
+
+![image](https://github.com/user-attachments/assets/1d8c8eba-8044-495d-a490-d0b21c3c2fcd) ![image](https://github.com/user-attachments/assets/9d81ffec-e418-4f2c-a454-689fe84a7d94)
 
 
 ** Модуль Dialog **
 
+Самый большой модуль практики
+Добавлены кнопки для вызова диалогов
 
+![image](https://github.com/user-attachments/assets/9e1f23e9-683c-4694-b714-1ef292fce046) !
+
+В первой кнопке по инструкции из практики сделан диалог "Дороги к успеху"
+
+![image](https://github.com/user-attachments/assets/96cf5aee-a365-46ad-bf9b-2d10cc34f678)
+ [image](https://github.com/user-attachments/assets/310d97a8-8977-43d3-958f-3df6c82762bb) ![image](https://github.com/user-attachments/assets/34ecd7bb-cb61-4b78-9723-289f9167ce37)
+
+По второй кнопке вызывается диалог выбора времени с помощью TimePickerDialog
+
+![image](https://github.com/user-attachments/assets/1ac3d18b-ed9c-42c2-98cd-6dcd2f707250) ![image](https://github.com/user-attachments/assets/9f3950c2-3fde-4a8a-8376-5fad0d6baf4f)
+
+На третьей кнопке вызывается диалог выбора даты сделанный с помощью Snackbar
+
+![image](https://github.com/user-attachments/assets/1215a0ac-f637-4b62-ae3c-a4cfa6effb50) ![image](https://github.com/user-attachments/assets/3e322268-53fe-4426-89bd-5713255a9961)
+
+По последней кнопке вызывается уведомление "прогресса\загрузки" ProgressDialog
+
+![image](https://github.com/user-attachments/assets/e504eac9-37b4-4424-b7cf-e8f5f6c53b45)
 
 ** Итоги **
 
