@@ -47,6 +47,9 @@
 
 ** Модуль ToastApp **
 
+Обработчик для подсчёта количества введенных символов с выводом в уведомлении
+
+![image](https://github.com/user-attachments/assets/47506177-6cd0-488f-93b7-f08b8c7f267d) ![image](https://github.com/user-attachments/assets/a5db58b9-3cce-4eac-94b8-7bcf38d13658)
 
 
 ** Модуль NotificationApp **
