@@ -21,6 +21,17 @@
 
 ** Модуль MultiActivity **
 
+Было добавлено поле для ввода ФИО и кнопка, при нажатии на которую введенный текст из первой активности копируется во viewtext во второй активности 
+
+![image](https://github.com/user-attachments/assets/49793536-fdd5-4831-9dd6-c8345d5291a9)
+
+![image](https://github.com/user-attachments/assets/13984327-d0c5-4248-9993-af27c7ae124f)
+
+В логе можно наблюдать переключение активностей
+
+![image](https://github.com/user-attachments/assets/faa8956c-8902-473f-b4ee-efbdea3e2e41)
+
+
 ** Модуль IntentFilter **
 
 ** Модуль ToastApp **
