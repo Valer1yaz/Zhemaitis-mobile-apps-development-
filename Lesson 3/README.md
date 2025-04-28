@@ -1,168 +1,99 @@
-**  Практическая работа 1. Отчёт по выполнению**
+**  Практическая работа 3. Отчёт по выполнению**
 
-В первой части практической работы произведена установка среды разработки Android Studio. Далее создан первый проект Lesson 1, в котором созданы модули под каждое задание: layouttype, control_lesson1, buttonclicker.
+В данной практической работе с темой "Намерения в андроид разработке" будут изучены передача, обмен и получение данных с помощью Intent и нюансы использования фрагментов в различных приложениях.
 
-**  Модуль layouttype**
+**  Модуль IntentApp **
 
-Свободный layout основанный на относительных связях с parent
+Созданы 2 activity. В первой активности получаем системное время.Далее передаётся время из одной активности в другую и отображается
+во второй activity в «textView» следующая строка: «КВАДРАТ ЗНАЧЕНИЯ МОЕГО НОМЕРА ПО СПИСКУ В ГРУППЕ СОСТАВЛЯЕТ ЧИСЛО, а текущее время ВРЕМЯ».
 
-![image](https://github.com/user-attachments/assets/64ddeba3-ddb0-47d7-a29e-96383bd89718)
+![image](https://github.com/user-attachments/assets/3e0b232b-db99-48ff-b50a-a11cd61a4670)
 
-Lineral layout
-
-![image](https://github.com/user-attachments/assets/b00919b4-f057-46a6-bec0-0e6748e62a7d)
-
-Table layout
-
-![image](https://github.com/user-attachments/assets/8f5f0d56-0873-48d7-bbb0-99a71c789523)
-
-**  Модуль control_lesson1**
-Далее было выполнено контрольное задание с созданием своего лейаута
-Страница с использованием текста, полей вода, кнопок и картинок
-
-![image](https://github.com/user-attachments/assets/f2b8dc8a-cc05-49e7-9c49-785570f9ec02)
-
-Затем освоено создание страниц с изменениями под поворот экрана
-Страница с кнопками. Вертикальная версия
-
-![image](https://github.com/user-attachments/assets/2224184c-b35f-4191-83b3-e11dd248ae53)
-
-Горизонтальная версия
-
-![image](https://github.com/user-attachments/assets/cb979666-ca05-4143-8fae-ff2f6cc38fe0)
-
-**  Модуль ButtonClicker**
-
-Была создана страничка с кнопками, при нажатии на которые происходит обработка события и применяются изменения - меняется текст либо состояние чекбокса
-При нажатии на кнопку "Кто я" выводится текст с номером в группе
-
-![image](https://github.com/user-attachments/assets/aaaf4161-0e9f-45e2-b0aa-1f4b545ab4d3)
-
-При нажатии на кнопку "Это не я" отмечается чекбокс и появлятеся текст "это не я"
-
-![image](https://github.com/user-attachments/assets/d288ade5-d883-4b0b-9be5-1773e605f375)
-
-Activity_main.xml
-```
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/tvOut"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textViewStudent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnWhoAmI"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Who am i"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox"
-        app:layout_constraintEnd_toStartOf="@+id/btnItIsNotMe"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewStudent" />
-
-    <Button
-        android:id="@+id/btnItIsNotMe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onMyButtonClick"
+![image](https://github.com/user-attachments/assets/2ae06294-55ae-4b38-bafd-7a119ef50eae)
 
 
-        android:text="Its not me"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnWhoAmI"
-        app:layout_constraintTop_toBottomOf="@+id/textViewStudent" />
+**  Модуль Sharer **
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CheckBox"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewStudent" />
+Для отправки различных сообщений типа электронного письма, SMS, MMS
+и т.д. применяется действие «ACTION_SEND». Метод «setType», требуется для
+установки типа MIME для передаваемых данных, хранящихся в параметре
+намерения «extras» с ключами EXTRA_TEXT или EXTRA_STREAM, в зависимости
+от типа.
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+![image](https://github.com/user-attachments/assets/bd63182c-6715-4fa5-8ca6-1f82110b665f)
 
-```
 
-MainActivity.java
-```
-package ru.mirea.zhemaytisvs.buttonclicker;
+**  Модуль FavoriteBook **
 
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.TextView;
+Создано приложение с двумя экранами. Основное предназначение приложения
+заключается в отображении на экране названия любимой книги разработчика
+и пользователя приложением с использованием двух активностей.
+Компоненты первого экрана:
+- поле отображения «TextView» имеет несколько состояний: начальное
+значение «Тут появится название вашей любимой книги и любимая цитата из нее!»,
+«Название Вашей любимой книги: КНИГА. Цитата: Цитата»;
+- кнопка «Button» с текстом «Открыть экран ввода данных» предназначена
+для открытия второй активности.
+Компоненты второго экрана:
+- поле отображения «TextView» – «Любимая книга разработчика»;
+- поле отображения «TextView» – «Цитата из книги»;
+- поле ввода «EditText», со значением свойства «Hint»: «Введите название
+Вашей любимой книги»;
 
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+![image](https://github.com/user-attachments/assets/e366e748-bc13-4430-b0a9-3b3fc46e5cab)
 
-public class MainActivity extends AppCompatActivity {
-    private TextView textViewStudent;
-    private Button btnWhoAmI;
-    private Button btnItIsNotMe;
-    private CheckBox checkBox;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
-        textViewStudent = findViewById(R.id.textViewStudent);
-        btnWhoAmI = findViewById(R.id.btnWhoAmI);
-        checkBox = findViewById(R.id.checkBox);
+![image](https://github.com/user-attachments/assets/650f8302-1136-4fc9-bdb2-ed59d14848af)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.tvOut), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+![image](https://github.com/user-attachments/assets/c4173407-4adc-48ea-bd24-903d30be1d96)
 
-        View.OnClickListener oclBtnWhoAmI = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                textViewStudent.setText("Мой номер по списку № 9");
-            }
-        };
-        btnWhoAmI.setOnClickListener(oclBtnWhoAmI);
-    }
 
-    public void onMyButtonClick(View view) {
-        boolean isChecked = !checkBox.isChecked();
-        checkBox.setChecked(isChecked);
+**  Модуль SystemIntentsApp **
 
-        if (isChecked) {
-            textViewStudent.setText("Это не я");
-        } else {
-            textViewStudent.setText("Мой номер по списку № 9");
-        }
+В методе «onClickCall» используется конструктор «Intent (String action)».
+В методе «onClickOpenBrowser» создается «Intent» и на вход принимается
+«action» и «data». Используется стандартный системный «action» – ACTION_VIEW.
+В качестве «data» подаётся объект Uri, созданный из веб-ссылки:
+«http://developer.android.com».
+В методе «onClickMaps» используется конструктор «Intent» с установленным
+«action» – ACTION_VIEW, а в качестве «data» создаётся Uri из пары координат –
+«55.749479,37.613944». Данный «Intent» означает намерение отобразить карту
+с указанными координатами в центре экрана.
 
-    }
-}
-```
+![image](https://github.com/user-attachments/assets/1cc43243-5cb7-4ae6-b0ed-be9031f45628)
+
+![image](https://github.com/user-attachments/assets/6af52fd8-ebc0-4546-9f43-02ed37dc2737) ![image](https://github.com/user-attachments/assets/4c65d584-c6ea-45da-a50e-c79b9e22f084) ![image](https://github.com/user-attachments/assets/e0244759-58bd-425f-966f-540b6d47c7a5)
+
+
+**  Модуль SimpleFragmentApp **
+
+Требуется создать приложение на основе «Fragment», учитывающее
+изменение ориентации экрана.
+
+![image](https://github.com/user-attachments/assets/fbff7381-bc87-464e-b2fd-b471167121da)
+
+![image](https://github.com/user-attachments/assets/90a1887d-e0dd-442d-8bf4-ceb112129959)
+
+![image](https://github.com/user-attachments/assets/bbda577f-519a-4242-beca-28b3efdb76d7)
+
+
+**  Приложение MireaProject **
+
+Добавлены в сайд-меню кнопки с информацией и браузером 
+
+![image](https://github.com/user-attachments/assets/85e00508-51dc-497a-9151-2d70604a58dd)
+
+В информации добавлен скроллвью с текстом и картинкой
+
+![image](https://github.com/user-attachments/assets/e84b4d25-d03e-4914-b735-973a8d2c1adc)
+
+Была ошибка кэша при попытке открытия браузера, поэтому в манифесте добавлено разрешение пользователя на доступ к интернету 
+
+![image](https://github.com/user-attachments/assets/aedba6af-3842-4f1a-ab94-2af988b25a50)
+
 
 Итоги
 
-В ходе выполнения практической работы была освоена база разработки Android-приложений на Java в Android Studio, использования модулей и работы с элементами интерфейса. Также были изучены основы обработчиков событий и взаимодействия с UI-компонентами.
+В ходе выполнения практической работы изучены передача, обмен и получение данных с помощью Intent и нюансы использования фрагментов в различных приложениях.
 
 Выполнила Жемайтис Валерия
 Группа БСБО-09-22
