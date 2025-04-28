@@ -1,0 +1,54 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title_text"
+            style="@style/TextAppearance.Material3.HeadlineLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Что из себя представляют бионические протезы?"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/content_text"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="true"
+            android:fadingEdge="vertical"
+            android:lineSpacingMultiplier="1.2"
+            android:text="В последние десятилетие развитие технологий сделало огромные шаги навстречу будущему. Электромобили, безвредные для окружающей среды, скоростные поезда, развивающие скорость до 580 км/ч и, конечно, протезы, способные восстановить функционал утраченной конечности. Все это уже давно не научная фантастика, а наша реальность. Технологии в сфере протезирования развились до такой степени, что современный бионический протез можно считать полноценной конечностью киборга, человека будущего.
+Бионический протез, он же биоэлектрический и миоэлектрический, работает за счет считывания специальными мио-датчиками электрического потенциала, вырабатываемого во время напряжения сохранившихся мышечных тканей руки. Мио-датчики, которые обеспечивают корректное считывание этого электрического потенциала, состоят из чувствительных электродов. Они передают считываемый сигнал в микропроцессор, мозг всего протеза, который совершает обработку полученной информации при помощи компьютерных алгоритмов. Как итог – микропроцессор, опираясь на полученный сигнал, за доли секунды формирует команды и направляет их в двигатели (моторы), которые и приводят в движение активные части протеза.
+"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="16sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="12dp"
+            app:strokeWidth="1dp">
+
+            <ImageView
+                android:id="@+id/industry_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_menu_gallery" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
