@@ -78,9 +78,17 @@
 
 **  Приложение MireaProject **
 
+Добавлены в сайд-меню кнопки с информацией и браузером 
 
+![image](https://github.com/user-attachments/assets/85e00508-51dc-497a-9151-2d70604a58dd)
 
+В информации добавлен скроллвью с текстом и картинкой
 
+![image](https://github.com/user-attachments/assets/e84b4d25-d03e-4914-b735-973a8d2c1adc)
+
+Была ошибка кэша при попытке открытия браузера, поэтому в манифесте добавлено разрешение пользователя на доступ к интернету 
+
+![image](https://github.com/user-attachments/assets/aedba6af-3842-4f1a-ab94-2af988b25a50)
 
 
 Итоги
