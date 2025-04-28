@@ -69,7 +69,11 @@
 Требуется создать приложение на основе «Fragment», учитывающее
 изменение ориентации экрана.
 
+![image](https://github.com/user-attachments/assets/fbff7381-bc87-464e-b2fd-b471167121da)
 
+![image](https://github.com/user-attachments/assets/90a1887d-e0dd-442d-8bf4-ceb112129959)
+
+![image](https://github.com/user-attachments/assets/bbda577f-519a-4242-beca-28b3efdb76d7)
 
 
 **  Приложение MireaProject **
