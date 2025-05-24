@@ -1,0 +1,55 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextAppearance.Material3.HeadlineLarge"
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Почему мобильная съёмка — это топ-навык"
+            android:textSize="24sp"
+            android:textColor="?attr/colorOnSurface"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:id="@+id/content_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Камера, которая всегда с собой, — для жизни в моменте: не нужно тратиться на фотосессии и ждать особого случая.
+            Каждый день в вашей галерее будут появляться живые снимки: детей, друзей, новых мест или чашки кофе в лучах солнца.
+Вы можете находить красоту в повседневности и сразу превращать её в искусство. Достаньте телефон, сделайте концептуальный снимок, обработайте его в своём уникальном стиле и выложите в блог — даже самые искушённые подписчики оценят!
+Творческая и красивая работа в удовольствие: вы сможете общаться с блогерами, снимать в красивых локациях, самостоятельно планировать график и находить больше времени на друзей, семью и путешествия. И не надо таскать тяжёлую сумку с техникой — для работы нужен только телефон.
+"
+            android:textSize="16sp"
+            android:textColor="?attr/colorOnSurface"
+            android:lineSpacingMultiplier="1.2" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="12dp"
+            app:strokeColor="?attr/colorOutline"
+            app:strokeWidth="1dp"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/industry_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
