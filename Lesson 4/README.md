@@ -6,9 +6,11 @@
 
 Создано две активности (портретной и горизонтальной ориентации): добавлено изображение, название аудиодорожки и три кнопки (пуск, переключение назад и переключение вперёд). В файле «build.gradle» добавлен компонент «viewBinding». В файле «MainActivity» прописана логика связывания графических элементов из файла разметки через binding, а также прописаны обработчики нажатия на кнопки.
 
-![image](https://github.com/user-attachments/assets/7fecef30-ea92-4cce-8592-56d6913b86d2) ![image](https://github.com/user-attachments/assets/798e23b8-629e-4d17-912b-436be57fc1c7) 
+![image](https://github.com/user-attachments/assets/7fecef30-ea92-4cce-8592-56d6913b86d2) 
 
 ![image](https://github.com/user-attachments/assets/99ceab2a-ce95-4e34-aa20-f18052efd0b0)
+
+![image](https://github.com/user-attachments/assets/798e23b8-629e-4d17-912b-436be57fc1c7) 
 
 
 **  Модуль Thread **
