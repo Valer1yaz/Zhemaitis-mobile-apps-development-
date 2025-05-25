@@ -1,168 +1,48 @@
-**  Практическая работа 1. Отчёт по выполнению**
+**  Практическая работа 5. Отчёт по выполнению**
 
-В первой части практической работы произведена установка среды разработки Android Studio. Далее создан первый проект Lesson 1, в котором созданы модули под каждое задание: layouttype, control_lesson1, buttonclicker.
+В ходе практической работы будет изучено использование аппаратных показателей смартфонов, а именно сенсоров и датчиков (компаса и акселлеромента), а также камеры и микрофона. Изучен механизм запроса разрешений на пользование определёнными приложениями.
 
-**  Модуль layouttype**
+**  Модуль App**
 
 Свободный layout основанный на относительных связях с parent
 
-![image](https://github.com/user-attachments/assets/64ddeba3-ddb0-47d7-a29e-96383bd89718)
+Добавлен компонент «ListView» необходимый для отображения списка. В файле «MainActivity» реализована логика получения списка всех существующих датчиков и отображения их в компоненте с соответствующими названиями.
 
-Lineral layout
+![image](https://github.com/user-attachments/assets/5400f2f2-b8de-4bda-b7b3-eb1e733d9df2)
 
-![image](https://github.com/user-attachments/assets/b00919b4-f057-46a6-bec0-0e6748e62a7d)
+**  Модуль Accelerometer**
 
-Table layout
+В файле разметки добавлено 3 текстовых поля для отображения трёх различных значений. В файле «MainActivity» при помощи интерфейса «SensorEventListener» реализована логика отображения текущих показаний акселерометра по трём осям (X, Y, Z) и логика обновления данных при изменении положения мобильного устройства.
 
-![image](https://github.com/user-attachments/assets/8f5f0d56-0873-48d7-bbb0-99a71c789523)
+![image](https://github.com/user-attachments/assets/63326f1d-1dd8-4ad5-96c9-9233d3068cc5)
 
-**  Модуль control_lesson1**
-Далее было выполнено контрольное задание с созданием своего лейаута
-Страница с использованием текста, полей вода, кнопок и картинок
+**  Модуль Camera**
 
-![image](https://github.com/user-attachments/assets/f2b8dc8a-cc05-49e7-9c49-785570f9ec02)
+В файле разметки добавлено поле imageView, при нажатии на которое открывается камера. В папке res в папке xml создан файл paths.xml для сохранения полученного изображения в галерее. В манифест файле прописано разрешение на использование камеры. В «MainActivity» реализована логика запуска приложения "камера" при нажатии на соответствующий компонент, создание новой фотографии и сохранения фотографии во внутренней памяти.
 
-Затем освоено создание страниц с изменениями под поворот экрана
-Страница с кнопками. Вертикальная версия
+![image](https://github.com/user-attachments/assets/13829d20-9b3c-44df-b478-e693ca975840) ![image](https://github.com/user-attachments/assets/711a6656-e1a8-49a0-805b-c2b572a98de0)
+![image](https://github.com/user-attachments/assets/a4a7fb31-e603-4796-9e4c-ce116b66a557) ![image](https://github.com/user-attachments/assets/51b8269a-1589-46c5-8ec6-5412985a5390)
 
-![image](https://github.com/user-attachments/assets/2224184c-b35f-4191-83b3-e11dd248ae53)
+**  Модуль Audiorecord**
 
-Горизонтальная версия
+В файле activity_main.xml добавлено две кнопки для записи и воспроизведения аудио. В манифестe добавлено разрешение на использование микрофона. В файле MainActivity в классе «MediaRecorder» реализована логика записи аудиофайла и воспроизведения записанного файла по нажатию на соответствующие кнопки, также реализован учет состояния нажатия кнопок для предотвращения одновременного запуска процессов.
 
-![image](https://github.com/user-attachments/assets/cb979666-ca05-4143-8fae-ff2f6cc38fe0)
-
-**  Модуль ButtonClicker**
-
-Была создана страничка с кнопками, при нажатии на которые происходит обработка события и применяются изменения - меняется текст либо состояние чекбокса
-При нажатии на кнопку "Кто я" выводится текст с номером в группе
-
-![image](https://github.com/user-attachments/assets/aaaf4161-0e9f-45e2-b0aa-1f4b545ab4d3)
-
-При нажатии на кнопку "Это не я" отмечается чекбокс и появлятеся текст "это не я"
-
-![image](https://github.com/user-attachments/assets/d288ade5-d883-4b0b-9be5-1773e605f375)
-
-Activity_main.xml
-```
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/tvOut"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textViewStudent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnWhoAmI"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Who am i"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox"
-        app:layout_constraintEnd_toStartOf="@+id/btnItIsNotMe"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewStudent" />
-
-    <Button
-        android:id="@+id/btnItIsNotMe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onMyButtonClick"
+![image](https://github.com/user-attachments/assets/53f5979e-55d5-4523-9c7a-8e81905474c2) ![image](https://github.com/user-attachments/assets/466af420-0751-42ac-bfab-87c40f0d0053)
+![image](https://github.com/user-attachments/assets/60135940-896d-4677-8aa4-e0bc8cffdc06) ![image](https://github.com/user-attachments/assets/95ff01d3-e489-4038-9f94-f258f6ca0f1e)
+![image](https://github.com/user-attachments/assets/3b3b526c-6f59-4ede-aa5e-8d4357b6f622) ![image](https://github.com/user-attachments/assets/5d4a06c3-6459-46ef-9b7b-e8715cce3d2e)
 
 
-        android:text="Its not me"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnWhoAmI"
-        app:layout_constraintTop_toBottomOf="@+id/textViewStudent" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CheckBox"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewStudent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
 
-```
+**  Контрольное задание добавление новых экранов в MireaProject **
 
-MainActivity.java
-```
-package ru.mirea.zhemaytisvs.buttonclicker;
-
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.TextView;
-
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-public class MainActivity extends AppCompatActivity {
-    private TextView textViewStudent;
-    private Button btnWhoAmI;
-    private Button btnItIsNotMe;
-    private CheckBox checkBox;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
-        textViewStudent = findViewById(R.id.textViewStudent);
-        btnWhoAmI = findViewById(R.id.btnWhoAmI);
-        checkBox = findViewById(R.id.checkBox);
-
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.tvOut), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
-
-        View.OnClickListener oclBtnWhoAmI = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                textViewStudent.setText("Мой номер по списку № 9");
-            }
-        };
-        btnWhoAmI.setOnClickListener(oclBtnWhoAmI);
-    }
-
-    public void onMyButtonClick(View view) {
-        boolean isChecked = !checkBox.isChecked();
-        checkBox.setChecked(isChecked);
-
-        if (isChecked) {
-            textViewStudent.setText("Это не я");
-        } else {
-            textViewStudent.setText("Мой номер по списку № 9");
-        }
-
-    }
-}
-```
+В приложение были добавлены новые фрагменты SensorFragment, CameraFragment и MicrophoneFragment. Первый фрагмент использует результат измерений с компаса для определения направления на север. Второй фрагмент представляет собой экран для создания новой заметки с возможностью создания фотографии. Третий фрагмент использует функционал микрофона для записи аудиофайла и реализует логику воспроизведения полученного файла. Второй и третий фрагменты также реализуют механизм для запроса разрешений на использование соответствующих приложений.
 
 Итоги
 
-В ходе выполнения практической работы была освоена база разработки Android-приложений на Java в Android Studio, использования модулей и работы с элементами интерфейса. Также были изучены основы обработчиков событий и взаимодействия с UI-компонентами.
+В ходе выполнения практической работы изучено использование аппаратных показателей смартфонов, а именно сенсоров и датчиков (компаса и акселлеромента), а также камеры и микрофона. Изучен механизм запроса разрешений на пользование определёнными приложениями. Работа выполнена в полном объёме.
 
 Выполнила Жемайтис Валерия
+Номер по списку 9
 Группа БСБО-09-22
