@@ -27,6 +27,13 @@
 
 В файле activity_main.xml добавлено две кнопки для записи и воспроизведения аудио. В манифестe добавлено разрешение на использование микрофона. В файле MainActivity в классе «MediaRecorder» реализована логика записи аудиофайла и воспроизведения записанного файла по нажатию на соответствующие кнопки, также реализован учет состояния нажатия кнопок для предотвращения одновременного запуска процессов.
 
+![image](https://github.com/user-attachments/assets/53f5979e-55d5-4523-9c7a-8e81905474c2) ![image](https://github.com/user-attachments/assets/466af420-0751-42ac-bfab-87c40f0d0053)
+![image](https://github.com/user-attachments/assets/60135940-896d-4677-8aa4-e0bc8cffdc06) ![image](https://github.com/user-attachments/assets/95ff01d3-e489-4038-9f94-f258f6ca0f1e)
+![image](https://github.com/user-attachments/assets/3b3b526c-6f59-4ede-aa5e-8d4357b6f622) ![image](https://github.com/user-attachments/assets/5d4a06c3-6459-46ef-9b7b-e8715cce3d2e)
+
+
+
+
 
 **  Контрольное задание добавление новых экранов в MireaProject **
 
