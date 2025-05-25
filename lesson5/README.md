@@ -20,7 +20,8 @@
 
 В файле разметки добавлено поле imageView, при нажатии на которое открывается камера. В папке res в папке xml создан файл paths.xml для сохранения полученного изображения в галерее. В манифест файле прописано разрешение на использование камеры. В «MainActivity» реализована логика запуска приложения "камера" при нажатии на соответствующий компонент, создание новой фотографии и сохранения фотографии во внутренней памяти.
 
-
+![image](https://github.com/user-attachments/assets/13829d20-9b3c-44df-b478-e693ca975840) ![image](https://github.com/user-attachments/assets/711a6656-e1a8-49a0-805b-c2b572a98de0)
+![image](https://github.com/user-attachments/assets/a4a7fb31-e603-4796-9e4c-ce116b66a557) ![image](https://github.com/user-attachments/assets/51b8269a-1589-46c5-8ec6-5412985a5390)
 
 **  Модуль Audiorecord**
 
