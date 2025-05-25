@@ -22,3 +22,5 @@ dependencyResolutionManagement {
 rootProject.name = "lesson5"
 include(":app")
 include(":accelerometer")
+include(":camera")
+include(":audiorecord")

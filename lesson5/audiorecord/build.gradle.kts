@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "ru.mirea.zhemaytisvs.accelerometer"
+    namespace = "ru.mirea.zhemaytisvs.audiorecord"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "ru.mirea.zhemaytisvs.accelerometer"
+        applicationId = "ru.mirea.zhemaytisvs.audiorecord"
         minSdk = 26
         targetSdk = 35
         versionCode = 1

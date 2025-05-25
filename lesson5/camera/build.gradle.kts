@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "ru.mirea.zhemaytisvs.accelerometer"
+    namespace = "ru.mirea.zhemaytisvs.camera"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "ru.mirea.zhemaytisvs.accelerometer"
+        applicationId = "ru.mirea.zhemaytisvs.camera"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
