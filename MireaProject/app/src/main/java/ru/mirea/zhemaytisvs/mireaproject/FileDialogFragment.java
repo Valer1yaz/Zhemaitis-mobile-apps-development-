@@ -24,10 +24,9 @@ public class FileDialogFragment extends DialogFragment {
         super.onAttach(context);
         if (context instanceof FileDialogListener) {
             listener = (FileDialogListener) context;
-        } else if (getParentFragment() instanceof FileDialogListener) {
-            listener = (FileDialogListener) getParentFragment();
         } else {
-            throw new RuntimeException("Must implement FileDialogListener");
+            throw new ClassCastException(context.toString()
+                    + " must implement FileDialogListener");
         }
     }
 
@@ -49,13 +48,14 @@ public class FileDialogFragment extends DialogFragment {
         layout.addView(inputFilename);
         layout.addView(inputContent);
 
-        return new AlertDialog.Builder(requireActivity())
-                .setTitle("Создание файла")
+        AlertDialog.Builder builder = new AlertDialog.Builder(requireActivity());
+
+        return builder.setTitle("Создание файла")
                 .setView(layout)
                 .setPositiveButton("Сохранить", (dialog, which) -> {
                     String filename = inputFilename.getText().toString();
                     String content = inputContent.getText().toString();
-                    listener.onDialogSave(filename, content);
+                    listener.onDialogSave(filename, content); // Use the listener
                 })
                 .setNegativeButton("Отмена", null)
                 .create();

@@ -17,9 +17,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import ru.mirea.zhemaytisvs.mireaproject.R;
-
-public class WorkingWithFilesFragment extends Fragment implements FileDialogFragment.FileDialogListener {
+public class WorkingWithFilesFragment extends Fragment {
 
     private TextView textViewFileList;
 
@@ -49,7 +47,8 @@ public class WorkingWithFilesFragment extends Fragment implements FileDialogFrag
         updateFileList();
     }
 
-    private void updateFileList() {
+    public void updateFileList() {
+        if (getContext() == null) return;
         File filesDir = requireContext().getFilesDir();
         String[] files = filesDir.list();
 
@@ -64,18 +63,4 @@ public class WorkingWithFilesFragment extends Fragment implements FileDialogFrag
         }
     }
 
-    @Override
-    public void onDialogSave(String filename, String content) {
-        try {
-            File file = new File(requireContext().getFilesDir(), filename);
-            FileOutputStream fos = new FileOutputStream(file);
-            fos.write(content.getBytes());
-            fos.close();
-            Toast.makeText(getContext(), "Файл сохранён", Toast.LENGTH_SHORT).show();
-            updateFileList();
-        } catch (IOException e) {
-            e.printStackTrace();
-            Toast.makeText(getContext(), "Ошибка сохранения файла", Toast.LENGTH_SHORT).show();
-        }
-    }
 }
