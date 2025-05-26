@@ -5,7 +5,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="638dp"
+        android:layout_gravity="bottom|right" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -18,16 +19,17 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+        android:layout_height="427dp"
+        android:layout_marginTop="16dp"
+        android:paddingVertical="50px">
 
         <TextView
             android:id="@+id/textViewFileList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="8dp"
             android:text="Файлы будут отображаться здесь"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:padding="8dp" />
+            android:textAppearance="?android:attr/textAppearanceSmall" />
     </ScrollView>
 
 </FrameLayout>

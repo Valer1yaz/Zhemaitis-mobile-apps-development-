@@ -35,15 +35,15 @@ android {
 }
 
 dependencies {
-implementation(libs.appcompat)
-implementation(libs.material)
-implementation(libs.constraintlayout)
-implementation(libs.lifecycle.livedata.ktx)
-implementation(libs.lifecycle.viewmodel.ktx)
-implementation(libs.navigation.fragment)
-implementation(libs.navigation.ui)
-testImplementation(libs.junit)
-androidTestImplementation(libs.ext.junit)
-androidTestImplementation(libs.espresso.core)
-implementation("androidx.work:work-runtime:2.10.0")
+    implementation(libs.appcompat)
+    implementation(libs.material)
+    implementation(libs.constraintlayout)
+    implementation(libs.lifecycle.livedata.ktx)
+    implementation(libs.lifecycle.viewmodel.ktx)
+    implementation(libs.navigation.fragment)
+    implementation(libs.navigation.ui)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.ext.junit)
+    androidTestImplementation(libs.espresso.core)
+    implementation("androidx.work:work-runtime:2.10.0")
 }

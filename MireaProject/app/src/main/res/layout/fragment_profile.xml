@@ -2,36 +2,42 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent" android:padding="16dp">
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="ru.mirea.zhemaytisvs.mireaproject.ui.gallery.GalleryFragment"
+        android:layout_width="match_parent"
+        android:layout_height="312dp" />
+
     <EditText
         android:id="@+id/editName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="67dp"
         android:hint="Имя" />
 
     <EditText
         android:id="@+id/editAge"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="63dp"
         android:hint="Возраст"
         android:inputType="number" />
 
     <EditText
         android:id="@+id/editGroup"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:hint="Группа" />
 
     <EditText
         android:id="@+id/editListNumber"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="69dp"
         android:hint="Номер по списку"
         android:inputType="number" />
 
     <Button
         android:id="@+id/btnSave"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Сохранить" />
+        android:layout_width="376dp"
+        android:layout_height="73dp"
+        android:text="Обновить" />
 
 </LinearLayout>

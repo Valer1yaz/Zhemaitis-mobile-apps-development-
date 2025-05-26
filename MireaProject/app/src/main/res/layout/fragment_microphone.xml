@@ -6,10 +6,22 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:paddingHorizontal="150px"
+        android:paddingVertical="140px"
+        android:text="Аудиозаметка"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp" />
+
     <Button
         android:id="@+id/btnRecord"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Начать запись" />
+        android:layout_width="251dp"
+        android:layout_height="79dp"
+        android:text="Записать" />
 
 </LinearLayout>

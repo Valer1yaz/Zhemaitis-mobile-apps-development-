@@ -24,14 +24,51 @@
         tools:layout="@layout/fragment_slideshow" />
 
     <fragment
+        android:id="@+id/nav_data"
+        android:name="ru.mirea.zhemaytisvs.mireaproject.DataFragment"
+        android:label="Информация"
+        tools:layout="@layout/fragment_data" />
+
+    <fragment
         android:id="@+id/nav_webview"
         android:name="ru.mirea.zhemaytisvs.mireaproject.WebViewFragment"
-        android:label="Веб-браузер"
+        android:label="Веб-страница"
         tools:layout="@layout/fragment_web_view" />
 
     <fragment
-        android:id="@+id/nav_data"
-        android:name="ru.mirea.zhemaytisvs.mireaproject.DataFragment"
-        android:label="О бионике"
-        tools:layout="@layout/fragment_data" />
+        android:id="@+id/nav_background"
+        android:name="ru.mirea.zhemaytisvs.mireaproject.BackgroundTaskFragment"
+        android:label="BackgroundTask"
+        tools:layout="@layout/fragment_web_view" />
+
+    <fragment
+        android:id="@+id/nav_compass"
+        android:name="ru.mirea.zhemaytisvs.mireaproject.SensorFragment"
+        android:label="Компас"
+        tools:layout="@layout/fragment_sensor" />
+
+    <fragment
+        android:id="@+id/nav_camera"
+        android:name="ru.mirea.zhemaytisvs.mireaproject.CameraFragment"
+        android:label="Камера"
+        tools:layout="@layout/fragment_camera" />
+
+    <fragment
+        android:id="@+id/nav_microphone"
+        android:name="ru.mirea.zhemaytisvs.mireaproject.MicrophoneFragment"
+        android:label="Микрофон"
+        tools:layout="@layout/fragment_microphone" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="ru.mirea.zhemaytisvs.mireaproject.ProfileFragment"
+        android:label="Профиль"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_files"
+        android:name="ru.mirea.zhemaytisvs.mireaproject.WorkingWithFilesFragment"
+        android:label="Работа с файлами"
+        tools:layout="@layout/fragment_working_with_files" />
+
 </navigation>
