@@ -55,9 +55,20 @@
 
 В приложение было добавлено:
 Фрагмент ProfileFragment. В файл разметки добавлено несколько полей ввода текста (имя, возраст, группа и номер по списку) и кнопка сохранения. Добавлена логика сохранения введённых данных в файл настроек.
-Фрагмент WorkingWithFilesFragment. В файле разметки добавлена кнопка «Floating Action Button» и текстовое поле для отображения всех сохранённых файлов. 
-Фрагмент FileDialogFragment. Сделан вывод окна с полями для ввода текста и кнопками сохранить и отменить, которое появляется после нажатия на круглую  кнопку действия на основном экране. Добавлена логика простой шифрования и сохранения данных в локальном хранилище.
+Фрагмент WorkingWithFilesFragment. В файле разметки добавлена круглая  кнопка действия и текстовое поле для отображения всех сохранённых файлов. 
+Фрагмент FileDialogFragment. Сделан вывод окна с полями для ввода текста и кнопками сохранить и отменить, которое появляется после нажатия на круглую  кнопку действия на основном экране. Cохранение данных в локальном хранилище.
 
+![image](https://github.com/user-attachments/assets/30d26f7d-8ad3-4882-8d88-3f0bd18035b9) ![image](https://github.com/user-attachments/assets/bc8be9c9-eb01-4ba1-b989-75d2bc314e65)
+
+![image](https://github.com/user-attachments/assets/5fcc8536-eaa9-45e1-ae00-7c7f432f64d5)
+
+![image](https://github.com/user-attachments/assets/910580a5-2d8c-4443-9c47-600e3ad87e8a) ![image](https://github.com/user-attachments/assets/f7a69981-d622-494a-b90c-ba5a7fc694fa)
+
+![image](https://github.com/user-attachments/assets/73385c6c-9cc9-4c0c-927d-de6a73c81cb8) ![image](https://github.com/user-attachments/assets/26265121-85b6-4910-8511-b358b00859c4)
+
+![image](https://github.com/user-attachments/assets/f17831fd-7bc7-4311-bad5-a87078f35ad8)
+
+![image](https://github.com/user-attachments/assets/ad13f3b6-51e8-4152-bf2a-459fdcf45b2f)
 
 
 Итоги
