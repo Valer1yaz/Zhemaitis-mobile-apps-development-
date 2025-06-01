@@ -25,16 +25,22 @@
 
 ![image](https://github.com/user-attachments/assets/f8cee01b-1014-45c1-a6a3-90fef25b0385)
 
-![image](https://github.com/user-attachments/assets/3f4aa92a-be2a-4deb-ac91-ea05fc7c31b6)
+
+![image](https://github.com/user-attachments/assets/7a7c9445-aaf4-4efe-9585-d19bdbd71d0f)
+
+
+![image](https://github.com/user-attachments/assets/b32d04ca-89c5-432f-8119-afcd184abb77)
+
 
 ![image](https://github.com/user-attachments/assets/a41e6fc7-5843-4e10-8f8e-a88cbfc8d99e)
 
 
 **  Контрольное задание MireaProject **
 
-В приложение было добавлено: экран входа в приложение с помощью «Firebase». 
+В приложение было добавлено: экран входа в приложение с помощью «Firebase» и просмотр погоды. 
 
 
+![image](https://github.com/user-attachments/assets/41143abc-7d89-411e-b78d-bf31a2cddc2e) ![image](https://github.com/user-attachments/assets/eada365d-f507-4fe4-8832-fdac65db33b3)
 
 
 Итоги
