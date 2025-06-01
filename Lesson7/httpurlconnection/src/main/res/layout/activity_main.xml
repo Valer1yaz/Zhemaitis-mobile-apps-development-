@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp">
 
     <TextView
         android:id="@+id/tvCity"
-        android:layout_width="1000px"
-        android:layout_height="100px"
+        android:layout_width="1000dp"
+        android:layout_height="100dp"
         android:layout_marginTop="100dp"
         android:text="Город: --"
         android:textSize="16sp"
@@ -21,8 +19,8 @@
 
     <TextView
         android:id="@+id/tvRegion"
-        android:layout_width="1000px"
-        android:layout_height="100px"
+        android:layout_width="1000dp"
+        android:layout_height="100dp"
         android:layout_marginTop="8dp"
         android:text="Регион: --"
         android:textSize="16sp"
@@ -32,8 +30,8 @@
 
     <TextView
         android:id="@+id/tvCountry"
-        android:layout_width="1000px"
-        android:layout_height="100px"
+        android:layout_width="1000dp"
+        android:layout_height="100dp"
         android:layout_marginTop="8dp"
         android:text="Страна: --"
         android:textSize="16sp"
@@ -43,8 +41,8 @@
 
     <TextView
         android:id="@+id/tvLatitude"
-        android:layout_width="1000px"
-        android:layout_height="100px"
+        android:layout_width="1000dp"
+        android:layout_height="100dp"
         android:layout_marginTop="8dp"
         android:text="Широта: --"
         android:textSize="16sp"
@@ -54,8 +52,8 @@
 
     <TextView
         android:id="@+id/tvLongitude"
-        android:layout_width="1000px"
-        android:layout_height="100px"
+        android:layout_width="1000dp"
+        android:layout_height="100dp"
         android:layout_marginTop="8dp"
         android:text="Долгота: --"
         android:textSize="16sp"
@@ -65,8 +63,8 @@
 
     <TextView
         android:id="@+id/tvTemperature"
-        android:layout_width="1000px"
-        android:layout_height="100px"
+        android:layout_width="1000dp"
+        android:layout_height="100dp"
         android:layout_marginTop="8dp"
         android:text="Темп.: --"
         android:textSize="16sp"
@@ -77,8 +75,8 @@
 
     <TextView
         android:id="@+id/tvWindspeed"
-        android:layout_width="1000px"
-        android:layout_height="100px"
+        android:layout_width="1000dp"
+        android:layout_height="100dp"
         android:layout_marginTop="8dp"
         android:text="Ветер: --"
         android:textSize="16sp"

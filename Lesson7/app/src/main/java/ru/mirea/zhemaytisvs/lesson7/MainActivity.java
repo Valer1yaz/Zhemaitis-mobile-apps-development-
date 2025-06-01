@@ -3,7 +3,7 @@ package ru.mirea.zhemaytisvs.lesson7;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
-import ru.mirea.zhemaytisvs.app.databinding.ActivityMainBinding;
+import ru.mirea.zhemaytisvs.lesson7.databinding.ActivityMainBinding;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.net.InetSocketAddress;
