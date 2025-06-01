@@ -39,7 +39,7 @@
 В приложение было добавлено: экран входа в приложение с помощью «Firebase» и просмотр погоды. 
 
 
-![image](https://github.com/user-attachments/assets/41143abc-7d89-411e-b78d-bf31a2cddc2e) ![image](https://github.com/user-attachments/assets/eada365d-f507-4fe4-8832-fdac65db33b3)
+![image](https://github.com/user-attachments/assets/0c9dc1a7-5700-444c-9696-d172e4f4e4ca)  ![image](https://github.com/user-attachments/assets/eada365d-f507-4fe4-8832-fdac65db33b3)
 
 
 Итоги
