@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="1000px"
+        android:layout_height="100px"
+        android:layout_marginTop="100dp"
+        android:text="Город: --"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRegion"
+        android:layout_width="1000px"
+        android:layout_height="100px"
+        android:layout_marginTop="8dp"
+        android:text="Регион: --"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCity" />
+
+    <TextView
+        android:id="@+id/tvCountry"
+        android:layout_width="1000px"
+        android:layout_height="100px"
+        android:layout_marginTop="8dp"
+        android:text="Страна: --"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRegion" />
+
+    <TextView
+        android:id="@+id/tvLatitude"
+        android:layout_width="1000px"
+        android:layout_height="100px"
+        android:layout_marginTop="8dp"
+        android:text="Широта: --"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCountry" />
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_width="1000px"
+        android:layout_height="100px"
+        android:layout_marginTop="8dp"
+        android:text="Долгота: --"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLatitude" />
+
+    <TextView
+        android:id="@+id/tvTemperature"
+        android:layout_width="1000px"
+        android:layout_height="100px"
+        android:layout_marginTop="8dp"
+        android:text="Темп.: --"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLongitude" />
+
+    <TextView
+        android:id="@+id/tvWindspeed"
+        android:layout_width="1000px"
+        android:layout_height="100px"
+        android:layout_marginTop="8dp"
+        android:text="Ветер: --"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTemperature" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="191dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="24dp"
+        android:text="Получить IP и погоду"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWindspeed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
