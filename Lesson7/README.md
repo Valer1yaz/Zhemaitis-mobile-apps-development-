@@ -32,7 +32,6 @@
 ![image](https://github.com/user-attachments/assets/b32d04ca-89c5-432f-8119-afcd184abb77)
 
 
-![image](https://github.com/user-attachments/assets/a41e6fc7-5843-4e10-8f8e-a88cbfc8d99e)
 
 
 **  Контрольное задание MireaProject **
